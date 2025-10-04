@@ -1,0 +1,208 @@
+07-02 10:00:15 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:00:15 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:00:15 [INFO ] Connecting to RabbitMQ...
+07-02 10:00:15 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:00:15 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:00:15 [INFO ] Queue consumer and event publisher initialized
+07-02 10:00:15 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:00:15 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:05:16 [INFO ] Worker heartbeat | status=running
+07-02 10:10:16 [INFO ] Worker heartbeat | status=running
+07-02 10:15:16 [INFO ] Worker heartbeat | status=running
+07-02 10:18:09 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:18:09 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:18:09 [INFO ] Connecting to RabbitMQ...
+07-02 10:18:09 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:18:09 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:18:09 [INFO ] Queue consumer and event publisher initialized
+07-02 10:18:09 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:18:09 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:23:09 [INFO ] Worker heartbeat | status=running
+07-02 10:27:33 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:27:33 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:27:33 [INFO ] Connecting to RabbitMQ...
+07-02 10:27:33 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:27:33 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:27:33 [INFO ] Queue consumer and event publisher initialized
+07-02 10:27:33 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:27:33 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:32:33 [INFO ] Worker heartbeat | status=running
+07-02 10:37:51 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:37:51 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:37:51 [INFO ] Connecting to RabbitMQ...
+07-02 10:37:51 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:37:51 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:37:51 [INFO ] Queue consumer and event publisher initialized
+07-02 10:37:51 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:37:51 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:40:41 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:40:41 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:40:41 [INFO ] Connecting to RabbitMQ...
+07-02 10:40:41 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:40:41 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:40:41 [INFO ] Queue consumer and event publisher initialized
+07-02 10:40:41 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:40:41 [INFO ] Analysis Worker ready - consuming messages
+07-02 11:24:34 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 11:24:34 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=10 
+07-02 11:24:34 [INFO ] Connecting to RabbitMQ...
+07-02 11:24:34 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 11:24:34 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 11:24:34 [INFO ] Queue consumer and event publisher initialized
+07-02 11:24:34 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=10
+07-02 11:24:34 [INFO ] Analysis Worker ready - consuming messages
+07-02 11:27:23 [INFO ] [61b63842] Processing assessment job (emma.miller.1@hotmail.com) | retry=0 processor=optimized
+07-02 11:27:23 [INFO ] [61b63842] Starting optimized assessment processing (emma.miller.1@hotmail.com)
+07-02 11:27:23 [INFO ] [61b63842] Updating analysis job status | status=processing
+07-02 11:27:23 [INFO ] [61b63842] Generating persona profile
+07-02 11:27:23 [INFO ] Google Generative AI initialized successfully | model=gemini-2.5-flash temperature=0.5
+07-02 11:27:23 [INFO ] [61b63842] Analysis job status updated successfully | status=processing
+07-02 11:27:46 [INFO ] [61b63842] AI response received | tokens=5724 cost=0
+07-02 11:27:46 [ERROR] Persona profile validation failed | errors=["\"roleModel\" must contain at least 4 items",...
+07-02 11:27:46 [ERROR] [61b63842] Failed to generate persona profile | error=Invalid persona profile: "roleModel" must conta...
+07-02 11:27:46 [ERROR] All retry attempts failed for AI persona generation | maxRetries=3 error=Invalid persona profile: "roleModel" must conta...
+07-02 11:27:46 [ERROR] [61b63842] Failed to process assessment job (optimized) (user:7ef1767f) | error=Invalid persona profile: "roleModel" must conta... processingTime=23027ms
+07-02 11:27:46 [ERROR] [61b63842] Failed to process assessment job (user:7ef1767f) | error=deduplicationResult is not defined processingTime=23032ms retryCount=0
+07-02 11:27:46 [INFO ] [61b63842] Retrying assessment job | retryCount=1 maxRetries=3
+07-02 11:27:51 [INFO ] [61b63842] Retry message published successfully | retryCount=1 delay=5000
+07-02 11:27:51 [INFO ] [61b63842] Processing assessment job (emma.miller.1@hotmail.com) | retry=1 processor=optimized
+07-02 11:27:51 [INFO ] [61b63842] Starting optimized assessment processing (emma.miller.1@hotmail.com)
+07-02 11:27:51 [WARN ] Duplicate job detected - currently processing (user:7ef1767f) | currentJobId=61b63842-9e5e-4432-a9d5-07131b55b6e0 originalJobId=61b63842-9e5e-4432-a9d5-07131b55b6e0 jobHash=ca87a47ec557a312bacaacaf766ece42a27b541d50ef5e7...
+07-02 11:27:51 [ERROR] [61b63842] Failed to process assessment job (optimized) (user:7ef1767f) | error=Cannot read properties of undefined (reading 'c... processingTime=107ms
+07-02 11:27:51 [ERROR] [61b63842] Failed to process assessment job (user:7ef1767f) | error=deduplicationResult is not defined processingTime=108ms retryCount=1
+07-02 11:27:51 [INFO ] [61b63842] Retrying assessment job | retryCount=2 maxRetries=3
+07-02 11:28:01 [INFO ] [61b63842] Retry message published successfully | retryCount=2 delay=10000
+07-02 11:28:01 [INFO ] [61b63842] Processing assessment job (emma.miller.1@hotmail.com) | retry=2 processor=optimized
+07-02 11:28:01 [INFO ] [61b63842] Starting optimized assessment processing (emma.miller.1@hotmail.com)
+07-02 11:28:01 [WARN ] Duplicate job detected - currently processing (user:7ef1767f) | currentJobId=61b63842-9e5e-4432-a9d5-07131b55b6e0 originalJobId=61b63842-9e5e-4432-a9d5-07131b55b6e0 jobHash=ca87a47ec557a312bacaacaf766ece42a27b541d50ef5e7...
+07-02 11:28:01 [ERROR] [61b63842] Failed to process assessment job (optimized) (user:7ef1767f) | error=Cannot read properties of undefined (reading 'c... processingTime=106ms
+07-02 11:28:01 [ERROR] [61b63842] Failed to process assessment job (user:7ef1767f) | error=deduplicationResult is not defined processingTime=108ms retryCount=2
+07-02 11:28:01 [INFO ] [61b63842] Retrying assessment job | retryCount=3 maxRetries=3
+07-02 11:28:21 [INFO ] [61b63842] Retry message published successfully | retryCount=3 delay=20000
+07-02 11:28:21 [INFO ] [61b63842] Processing assessment job (emma.miller.1@hotmail.com) | retry=3 processor=optimized
+07-02 11:28:21 [INFO ] [61b63842] Starting optimized assessment processing (emma.miller.1@hotmail.com)
+07-02 11:28:21 [WARN ] Duplicate job detected - currently processing (user:7ef1767f) | currentJobId=61b63842-9e5e-4432-a9d5-07131b55b6e0 originalJobId=61b63842-9e5e-4432-a9d5-07131b55b6e0 jobHash=ca87a47ec557a312bacaacaf766ece42a27b541d50ef5e7...
+07-02 11:28:21 [ERROR] [61b63842] Failed to process assessment job (optimized) (user:7ef1767f) | error=Cannot read properties of undefined (reading 'c... processingTime=107ms
+07-02 11:28:21 [ERROR] [61b63842] Failed to process assessment job (user:7ef1767f) | error=deduplicationResult is not defined processingTime=109ms retryCount=3
+07-02 11:28:21 [ERROR] [61b63842] Max retries exceeded, sending to dead letter queue | retryCount=4 maxRetries=3 shouldNotRetry=false error=deduplicationResult is not defined
+07-02 11:29:28 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 11:29:28 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=10 
+07-02 11:29:28 [INFO ] Connecting to RabbitMQ...
+07-02 11:29:28 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 11:29:28 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 11:29:28 [INFO ] Queue consumer and event publisher initialized
+07-02 11:29:28 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=10
+07-02 11:29:28 [INFO ] Analysis Worker ready - consuming messages
+07-02 11:29:45 [INFO ] [b580c6fe] Processing assessment job (david.taylor.1@yahoo.com) | retry=0 processor=optimized
+07-02 11:29:45 [INFO ] [b580c6fe] Starting optimized assessment processing (david.taylor.1@yahoo.com)
+07-02 11:29:45 [INFO ] [b580c6fe] Updating analysis job status | status=processing
+07-02 11:29:45 [INFO ] [b580c6fe] Generating persona profile
+07-02 11:29:45 [INFO ] Google Generative AI initialized successfully | model=gemini-2.5-flash temperature=0.5
+07-02 11:29:45 [INFO ] [b580c6fe] Analysis job status updated successfully | status=processing
+07-02 11:30:09 [INFO ] [b580c6fe] AI response received | tokens=5374 cost=0
+07-02 11:30:09 [ERROR] Persona profile validation failed | errors=["\"roleModel\" must contain at least 4 items",...
+07-02 11:30:09 [ERROR] [b580c6fe] Failed to generate persona profile | error=Invalid persona profile: "roleModel" must conta...
+07-02 11:30:09 [ERROR] All retry attempts failed for AI persona generation | maxRetries=3 error=Invalid persona profile: "roleModel" must conta...
+07-02 11:30:09 [ERROR] [b580c6fe] Failed to process assessment job (optimized) (user:ab2c5e9f) | error=Invalid persona profile: "roleModel" must conta... processingTime=24021ms
+07-02 11:30:09 [ERROR] [b580c6fe] Failed to process assessment job (user:ab2c5e9f) | error=deduplicationResult is not defined processingTime=24026ms retryCount=0
+07-02 11:30:09 [INFO ] [b580c6fe] Retrying assessment job | retryCount=1 maxRetries=3
+07-02 11:30:14 [INFO ] [b580c6fe] Retry message published successfully | retryCount=1 delay=5000
+07-02 11:30:14 [INFO ] [b580c6fe] Processing assessment job (david.taylor.1@yahoo.com) | retry=1 processor=optimized
+07-02 11:30:14 [INFO ] [b580c6fe] Starting optimized assessment processing (david.taylor.1@yahoo.com)
+07-02 11:30:14 [WARN ] Duplicate job detected - currently processing (user:ab2c5e9f) | currentJobId=b580c6fe-65b6-4b7b-8994-0056f7b836ad originalJobId=b580c6fe-65b6-4b7b-8994-0056f7b836ad jobHash=d0b9c4105a5f89b414783984092633c9da29e5e1094b921...
+07-02 11:30:14 [ERROR] [b580c6fe] Failed to process assessment job (optimized) (user:ab2c5e9f) | error=Cannot read properties of undefined (reading 'c... processingTime=114ms
+07-02 11:30:14 [ERROR] [b580c6fe] Failed to process assessment job (user:ab2c5e9f) | error=deduplicationResult is not defined processingTime=116ms retryCount=1
+07-02 11:30:14 [INFO ] [b580c6fe] Retrying assessment job | retryCount=2 maxRetries=3
+07-02 11:30:24 [INFO ] [b580c6fe] Retry message published successfully | retryCount=2 delay=10000
+07-02 11:30:24 [INFO ] [b580c6fe] Processing assessment job (david.taylor.1@yahoo.com) | retry=2 processor=optimized
+07-02 11:30:24 [INFO ] [b580c6fe] Starting optimized assessment processing (david.taylor.1@yahoo.com)
+07-02 11:30:24 [WARN ] Duplicate job detected - currently processing (user:ab2c5e9f) | currentJobId=b580c6fe-65b6-4b7b-8994-0056f7b836ad originalJobId=b580c6fe-65b6-4b7b-8994-0056f7b836ad jobHash=d0b9c4105a5f89b414783984092633c9da29e5e1094b921...
+07-02 11:30:24 [ERROR] [b580c6fe] Failed to process assessment job (optimized) (user:ab2c5e9f) | error=Cannot read properties of undefined (reading 'c... processingTime=103ms
+07-02 11:30:24 [ERROR] [b580c6fe] Failed to process assessment job (user:ab2c5e9f) | error=deduplicationResult is not defined processingTime=104ms retryCount=2
+07-02 11:30:24 [INFO ] [b580c6fe] Retrying assessment job | retryCount=3 maxRetries=3
+07-02 11:33:01 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 11:33:01 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=10 
+07-02 11:33:01 [INFO ] Connecting to RabbitMQ...
+07-02 11:33:01 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 11:33:01 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 11:33:01 [INFO ] Queue consumer and event publisher initialized
+07-02 11:33:01 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=10
+07-02 11:33:01 [INFO ] Analysis Worker ready - consuming messages
+07-02 11:33:31 [INFO ] [14cc198a] Processing assessment job (sarah.miller.1@outlook.com) | retry=0 processor=optimized
+07-02 11:33:31 [INFO ] [14cc198a] Starting optimized assessment processing (sarah.miller.1@outlook.com)
+07-02 11:33:31 [INFO ] [14cc198a] Updating analysis job status | status=processing
+07-02 11:33:31 [INFO ] [14cc198a] Generating persona profile
+07-02 11:33:31 [INFO ] Google Generative AI initialized successfully | model=gemini-2.5-flash temperature=0.5
+07-02 11:33:31 [INFO ] [14cc198a] Analysis job status updated successfully | status=processing
+07-02 11:33:53 [INFO ] [14cc198a] AI response received | tokens=5536 cost=0
+07-02 11:33:53 [INFO ] [14cc198a] Persona profile generated successfully (user:c5e91f2b) | profileArchetype=The Purposeful Polymath
+07-02 11:33:53 [INFO ] [14cc198a] Analysis result saved to Archive Service (user:c5e91f2b) | resultId=7627724b-45ea-4fb2-9541-38865acef7bd
+07-02 11:33:53 [INFO ] [14cc198a] Updating analysis job status | status=completed
+07-02 11:33:53 [WARN ] [14cc198a] Failed to get event publisher, using fallback notification (user:c5e91f2b) | error=Cannot access 'processingTime' before initializ...
+07-02 11:33:53 [INFO ] [14cc198a] Assessment job completed | resultId=7627724b-45ea-4fb2-9541-38865acef7bd time=22149ms
+07-02 11:33:53 [INFO ] [14cc198a] Analysis job status updated successfully | status=completed
+07-02 11:33:53 [INFO ] [14cc198a] Analysis complete notification sent (user:c5e91f2b) | resultId=7627724b-45ea-4fb2-9541-38865acef7bd
+07-02 11:33:58 [INFO ] Processing batch of results | batchSize=1
+07-02 11:33:58 [INFO ] Batch processed successfully | batchSize=1 successful=1 failed=0
+07-02 11:36:20 [INFO ] [d4e68e0f] Processing assessment job (john.wilson.1@yahoo.com) | retry=0 processor=optimized
+07-02 11:36:20 [INFO ] [d4e68e0f] Starting optimized assessment processing (john.wilson.1@yahoo.com)
+07-02 11:36:20 [INFO ] [d4e68e0f] Updating analysis job status | status=processing
+07-02 11:36:20 [INFO ] [d4e68e0f] Generating persona profile
+07-02 11:36:20 [INFO ] [d4e68e0f] Analysis job status updated successfully | status=processing
+07-02 11:36:41 [INFO ] [d4e68e0f] AI response received | tokens=5168 cost=0
+07-02 11:36:41 [INFO ] [d4e68e0f] Persona profile generated successfully (user:2d35e44b) | profileArchetype=The Principled Strategist
+07-02 11:36:41 [INFO ] [d4e68e0f] Analysis result saved to Archive Service (user:2d35e44b) | resultId=8738616d-e84c-43f8-8c5f-931297b45afa
+07-02 11:36:41 [INFO ] [d4e68e0f] Updating analysis job status | status=completed
+07-02 11:36:41 [WARN ] [d4e68e0f] Failed to get event publisher, using fallback notification (user:2d35e44b) | error=Cannot access 'processingTime' before initializ...
+07-02 11:36:41 [INFO ] [d4e68e0f] Assessment job completed | resultId=8738616d-e84c-43f8-8c5f-931297b45afa time=20949ms
+07-02 11:36:41 [INFO ] [d4e68e0f] Analysis complete notification sent (user:2d35e44b) | resultId=8738616d-e84c-43f8-8c5f-931297b45afa
+07-02 11:36:41 [INFO ] [d4e68e0f] Analysis job status updated successfully | status=completed
+07-02 11:36:46 [INFO ] Processing batch of results | batchSize=1
+07-02 11:36:46 [INFO ] Batch processed successfully | batchSize=1 successful=1 failed=0
+07-02 11:38:01 [INFO ] Worker heartbeat | status=running
+07-02 11:41:11 [INFO ] [7380f4b5] Processing assessment job (sarah.wilson.1@outlook.com) | retry=0 processor=optimized
+07-02 11:41:11 [INFO ] [7380f4b5] Starting optimized assessment processing (sarah.wilson.1@outlook.com)
+07-02 11:41:11 [INFO ] [7380f4b5] Updating analysis job status | status=processing
+07-02 11:41:11 [INFO ] [7380f4b5] Generating persona profile
+07-02 11:41:11 [INFO ] [7380f4b5] Analysis job status updated successfully | status=processing
+07-02 11:41:32 [INFO ] [7380f4b5] AI response received | tokens=5445 cost=0
+07-02 11:41:32 [INFO ] [7380f4b5] Persona profile generated successfully (user:a1f563b0) | profileArchetype=The Principled Innovator
+07-02 11:41:32 [INFO ] [7380f4b5] Analysis result saved to Archive Service (user:a1f563b0) | resultId=ae26e004-6610-4b2a-be57-74f743d18b32
+07-02 11:41:32 [INFO ] [7380f4b5] Updating analysis job status | status=completed
+07-02 11:41:32 [WARN ] [7380f4b5] Failed to get event publisher, using fallback notification (user:a1f563b0) | error=Cannot access 'processingTime' before initializ...
+07-02 11:41:32 [INFO ] [7380f4b5] Assessment job completed | resultId=ae26e004-6610-4b2a-be57-74f743d18b32 time=21574ms
+07-02 11:41:32 [INFO ] [7380f4b5] Analysis complete notification sent (user:a1f563b0) | resultId=ae26e004-6610-4b2a-be57-74f743d18b32
+07-02 11:41:32 [INFO ] [7380f4b5] Analysis job status updated successfully | status=completed
+07-02 11:41:37 [INFO ] Processing batch of results | batchSize=1
+07-02 11:41:37 [INFO ] Batch processed successfully | batchSize=1 successful=1 failed=0
+07-02 11:42:13 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 11:42:13 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=10 
+07-02 11:42:13 [INFO ] Connecting to RabbitMQ...
+07-02 11:42:13 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 11:42:13 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 11:42:13 [INFO ] Queue consumer and event publisher initialized
+07-02 11:42:13 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=10
+07-02 11:42:13 [INFO ] Analysis Worker ready - consuming messages
+07-02 11:42:22 [INFO ] [4a17e6a0] Processing assessment job (anna.wilson.1@gmail.com) | retry=0 processor=optimized
+07-02 11:42:22 [INFO ] [4a17e6a0] Starting optimized assessment processing (anna.wilson.1@gmail.com)
+07-02 11:42:22 [INFO ] [4a17e6a0] Updating analysis job status | status=processing
+07-02 11:42:22 [INFO ] [4a17e6a0] Generating persona profile
+07-02 11:42:22 [INFO ] Google Generative AI initialized successfully | model=gemini-2.5-flash temperature=0.5
+07-02 11:42:22 [INFO ] [4a17e6a0] Analysis job status updated successfully | status=processing
+07-02 11:42:45 [INFO ] [4a17e6a0] AI response received | tokens=5693 cost=0
+07-02 11:42:45 [INFO ] [4a17e6a0] Persona profile generated successfully (user:585c5e87) | profileArchetype=The Transformative Leader-Learner
+07-02 11:42:45 [INFO ] [4a17e6a0] Analysis result saved to Archive Service (user:585c5e87) | resultId=ac91c937-d577-4597-84d2-38d1d582840c
+07-02 11:42:45 [INFO ] [4a17e6a0] Updating analysis job status | status=completed
+07-02 11:42:45 [INFO ] [4a17e6a0] Event published successfully (user:585c5e87) | eventType=analysis.completed routingKey=analysis.completed exchange=atma_events_exchange
+07-02 11:42:45 [INFO ] [4a17e6a0] Assessment job completed | resultId=ac91c937-d577-4597-84d2-38d1d582840c time=23186ms
+07-02 11:42:45 [INFO ] [4a17e6a0] Analysis job status updated successfully | status=completed
+07-02 11:42:50 [INFO ] Processing batch of results | batchSize=1
+07-02 11:42:50 [INFO ] Batch processed successfully | batchSize=1 successful=1 failed=0
+07-02 11:47:13 [INFO ] Worker heartbeat | status=running
+07-02 11:52:13 [INFO ] Worker heartbeat | status=running
+07-02 11:57:13 [INFO ] Worker heartbeat | status=running
+07-02 12:02:13 [INFO ] Worker heartbeat | status=running
+07-02 12:07:13 [INFO ] Worker heartbeat | status=running
+07-02 12:12:13 [INFO ] Worker heartbeat | status=running
+07-02 12:17:13 [INFO ] Worker heartbeat | status=running
+07-02 12:22:13 [INFO ] Worker heartbeat | status=running

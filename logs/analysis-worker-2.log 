@@ -1,0 +1,45 @@
+07-02 10:00:16 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:00:16 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:00:16 [INFO ] Connecting to RabbitMQ...
+07-02 10:00:17 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:00:17 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:00:17 [INFO ] Queue consumer and event publisher initialized
+07-02 10:00:17 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:00:17 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:05:17 [INFO ] Worker heartbeat | status=running
+07-02 10:10:17 [INFO ] Worker heartbeat | status=running
+07-02 10:15:17 [INFO ] Worker heartbeat | status=running
+07-02 10:18:10 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:18:10 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:18:10 [INFO ] Connecting to RabbitMQ...
+07-02 10:18:10 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:18:10 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:18:10 [INFO ] Queue consumer and event publisher initialized
+07-02 10:18:10 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:18:10 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:23:10 [INFO ] Worker heartbeat | status=running
+07-02 10:27:34 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:27:34 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:27:34 [INFO ] Connecting to RabbitMQ...
+07-02 10:27:34 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:27:34 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:27:34 [INFO ] Queue consumer and event publisher initialized
+07-02 10:27:34 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:27:34 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:32:34 [INFO ] Worker heartbeat | status=running
+07-02 10:37:54 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:37:54 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:37:54 [INFO ] Connecting to RabbitMQ...
+07-02 10:37:54 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:37:54 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:37:54 [INFO ] Queue consumer and event publisher initialized
+07-02 10:37:54 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:37:54 [INFO ] Analysis Worker ready - consuming messages
+07-02 10:40:42 [INFO ] Job Deduplication Service initialized | cacheRetentionMs=3600000 maxCacheSize=10000
+07-02 10:40:42 [INFO ] Analysis Worker starting up | env=development queue=assessment_analysis concurrency=15 
+07-02 10:40:42 [INFO ] Connecting to RabbitMQ...
+07-02 10:40:42 [INFO ] RabbitMQ connected | queue=assessment_analysis exchange=atma_exchange eventsExchange=atma_events_exchange
+07-02 10:40:42 [INFO ] Event Publisher initialized | exchange=atma_events_exchange routingKeys={"analysisCompleted":"analysis.completed","anal...
+07-02 10:40:42 [INFO ] Queue consumer and event publisher initialized
+07-02 10:40:42 [INFO ] Started consuming messages | queue=assessment_analysis concurrency=15
+07-02 10:40:42 [INFO ] Analysis Worker ready - consuming messages
