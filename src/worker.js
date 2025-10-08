@@ -9,8 +9,15 @@
 // Load environment variables
 const path = require('path');
 
-// Load environment variables
-require('dotenv').config();
+// Load environment variables only in development
+// In production, Docker will inject environment variables from root .env via docker-compose
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({ path: path.join(__dirname, '../../.env'), override: true });
+  console.log('DEBUG: Environment loaded from root .env file');
+  console.log('DEBUG: GOOGLE_AI_MODEL:', process.env.GOOGLE_AI_MODEL);
+  console.log('DEBUG: USE_MOCK_MODEL:', process.env.USE_MOCK_MODEL);
+  console.log('DEBUG: AI_TEMPERATURE:', process.env.AI_TEMPERATURE);
+}
 
 // Import dependencies
 const logger = require('./utils/logger');
@@ -19,6 +26,35 @@ const dlqMonitor = require('./services/dlqMonitor');
 const jobHeartbeat = require('./services/jobHeartbeat');
 const stuckJobMonitor = require('./services/stuckJobMonitor');
 const { gracefulShutdown } = require('./utils/shutdown');
+
+// Validate critical environment variables
+const validateEnvironment = () => {
+  const critical = [
+    'GOOGLE_AI_API_KEY',
+    'GOOGLE_AI_MODEL',
+    'AI_TEMPERATURE',
+    'USE_MOCK_MODEL',
+    'RABBITMQ_URL',
+    'QUEUE_NAME'
+  ];
+
+  const missing = critical.filter(key => process.env[key] === undefined);
+
+  if (missing.length > 0) {
+    logger.error('Missing critical environment variables:', { missing });
+    throw new Error(`Missing required environment variables: ${missing.join(', ')}. Please check /atma-backend/.env file`);
+  }
+
+  logger.info('Environment validation passed', {
+    model: process.env.GOOGLE_AI_MODEL,
+    temperature: process.env.AI_TEMPERATURE,
+    useMockModel: process.env.USE_MOCK_MODEL,
+    configSource: process.env.NODE_ENV === 'production' ? 'Docker environment' : 'root .env file'
+  });
+};
+
+// Validate environment before starting
+validateEnvironment();
 
 // Log worker startup
 logger.info('Analysis Worker starting up', {
