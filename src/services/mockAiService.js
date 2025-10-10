@@ -12,8 +12,8 @@ const generateMockPersonaProfile = async (assessmentData, jobId) => {
   try {
     logger.info('Generating mock persona profile', { jobId });
 
-    // Simulate AI processing delay - 20 seconds for faster testing
-    await new Promise(resolve => setTimeout(resolve, 20000));
+    // Simulate AI processing delay - 2 minutes 30 seconds
+    await new Promise(resolve => setTimeout(resolve, 150000));
 
     // Extract assessment data for dynamic mock generation
     const { riasec, ocean, viaIs } = assessmentData;

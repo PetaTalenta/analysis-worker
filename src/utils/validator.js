@@ -48,7 +48,11 @@ const validateJobMessage = (message) => {
     if (error) {
       logger.error('Job message validation failed', {
         jobId: message.jobId,
-        errors: error.details.map(detail => detail.message)
+        errors: error.details.map(detail => ({
+          message: detail.message,
+          path: detail.path.join('.'),
+          value: detail.context?.value || 'N/A'
+        }))
       });
 
       return {
