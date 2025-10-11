@@ -8,12 +8,12 @@ const logger = require('../utils/logger');
 // RabbitMQ configuration
 const config = {
   url: process.env.RABBITMQ_URL || 'amqp://rabbitmq:5672',
-  exchange: process.env.EXCHANGE_NAME || 'atma_exchange',
+  exchange: process.env.EXCHANGE_NAME || 'fg_exchange',
   queue: process.env.QUEUE_NAME || 'assessment_analysis',
   routingKey: process.env.ROUTING_KEY || 'analysis.process',
   deadLetterQueue: process.env.DEAD_LETTER_QUEUE || 'assessment_analysis_dlq',
   // Events configuration for event-driven architecture
-  eventsExchange: process.env.EVENTS_EXCHANGE_NAME || 'atma_events_exchange',
+  eventsExchange: process.env.EVENTS_EXCHANGE_NAME || 'fg_events_exchange',
   eventsRoutingKeys: {
     analysisCompleted: 'analysis.completed',
     analysisFailed: 'analysis.failed',

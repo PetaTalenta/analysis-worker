@@ -15,7 +15,7 @@ class EventPublisher {
   constructor() {
     this.channel = null;
     this.config = {
-      eventsExchange: process.env.EVENTS_EXCHANGE_NAME || 'atma_events_exchange',
+      eventsExchange: process.env.EVENTS_EXCHANGE_NAME || 'fg_events_exchange',
       routingKeys: {
         analysisCompleted: 'analysis.completed',
         analysisFailed: 'analysis.failed',
